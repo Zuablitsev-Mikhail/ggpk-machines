@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="http://fred-wang.github.io/mathjax.js/mpadded-min.js"></script>
+  <title>Title</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 11px;
+    }
+
+    :root {
+      --primary-color: #7f7f7f;
+      --secondary-color: #ef6868;
+    }
+
+
+
+    body {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 300;
+      display: flex;
+      width: 100%;
+    }
+
+    main {
+      margin: 2.5rem auto;
+    }
+
+    .wrapper {
+      max-width: 128rem;
+      margin: 0 auto;
+      padding: 0 4rem;
+    }
+
+    .wrapper__title {
+      font-family: 'Roboto Condensed', sans-serif;
+      color: var(--secondary-color);
+      font-weight: 700;
+      font-size: 4.5rem;
+      max-width: 40rem;
+      margin: 0 auto;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .wrapper__title-light {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 6.5rem;
+    }
+
+    .wrapper__subtitle {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 3.5rem;
+      margin: 4rem auto;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000;
+    }
+
+    .wrapper__table {
+      font-size: 1rem;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .wrapper__table td,
+    .wrapper__table th {
+      padding: 1.5rem 0.5rem;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .wrapper__list {
+      padding-left: 3.5rem;
+      line-height: 3rem;
+      margin: 2.5rem 0;
+    }
+
+    .wrapper__list li {
+      transition: color .3s;
+    }
+
+    .wrapper__list li:hover {
+      color: var(--secondary-color);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .wrapper img {
+      display: flex;
+      margin: 3.5rem auto;
+      width: 40rem;
+      height: 30rem;
+      border-radius: 2rem;
+      transition: transform 0.5s;
+      cursor: pointer;
+    }
+
+    .wrapper img:hover {
+      transform: scale(1.2);
+    }
+
+    .wrapper__image-container {
+      overflow: hidden;
+    }
+
+    .wrapper__row-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .wrapper__row-content .wrapper__text {
+      max-width: 35rem;
+      margin: auto;
+      align-items: center;
+    }
+
+    .wrapper__row-content .wrapper__default-image {
+      width: 25rem;
+      height: 15rem;
+    }
+
+    .wrapper .wrapper__circle-image {
+      width: 30rem;
+      height: 30rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .wrapper__text {
+      margin: 2.5rem 0;
+      letter-spacing: 1px;
+      line-height: 3rem;
+    }
+
+    .wrapper__content-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .turning-lobby-mashines .wrapper__row-content {
+      column-gap: 10.5rem;
+    }
+
+    .multi-cutter-mashines .wrapper__row-content {
+      justify-content: space-around;
+    }
+
+    .multi-cutter-mashines img {
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .wrapper__grid-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+      align-items: center;
+    }
+
+    .wrapper__grid-content img {
+      width: 30rem;
+      height: auto;
+    }
+  </style>
+  <script>
+    let m1cl = () => {
+      video = document.getElementById("video1");
+      video.play()
+    }
+  </script>
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <h1 class="wrapper__title">
+        <span class="wrapper__title-light">Станки</span> токарной группы
+      </h1>
+    </div>
+    <section class="cutting-machines">
+      <div class="wrapper">
+        <h2 class="wrapper__subtitle">Классификация металлорежущих станков</h2>
+        <table class="wrapper__table">
+          <thead>
+            <tr>
+              <th rowspan="2">Cтанки</th>
+              <th rowspan="2">Группа</th>
+              <th colspan="9">Типы станков</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2"><b>Токарные</b></td>
+              <td rowspan="2"><b>1</b></td>
+              <td colspan="2">Автоматы и полуавтоматы</td>
+              <td rowspan="2">Револьверные</td>
+              <td rowspan="2">Сверлильно-отрезные</td>
+              <td rowspan="2">Карусельные</td>
+              <td rowspan="2">Токарные и лобовые</td>
+              <td rowspan="2">Многорезцовые</td>
+              <td rowspan="2">Специализирован-ные для фасонных изделий</td>
+              <td rowspan="2">Разные токар-ные</td>
+            </tr>
+            <tr>
+              <td>одношпиндельные</td>
+              <td>многошпиндельные</td>
+            </tr>
+            <tr>
+              <td><b>Сверлильные и расточные</b></td>
+              <td><b>2</b></td>
+              <td>Вертикально сверлильные</td>
+              <td>Одношпиндельные полуавтоматы</td>
+              <td>Многошпиндельные полуавтоматы</td>
+              <td>Координатно-расточные</td>
+              <td>Радиально-сверлильные</td>
+              <td>Расточные</td>
+              <td>Алмазно-расточные</td>
+              <td>Горизонтально-сверлильные</td>
+              <td>Разные сверлильные</td>
+            </tr>
+            <tr>
+              <td><b>Шлифовальные, доводочные</b></td>
+              <td><b>3</b></td>
+              <td>Кругло шлифовальные</td>
+              <td>Внутри шлифовальные</td>
+              <td>Обдирочно шлифовальные</td>
+              <td>Специализированные шлифовальные</td>
+              <td></td>
+              <td>Заточные</td>
+              <td>Плоскошлифовальные</td>
+              <td>Притирочные и полировальные</td>
+              <td>Разные станки, работающие абразивом</td>
+            </tr>
+            <tr>
+              <td><b>Комбинирован ные</b></td>
+              <td><b>4</b></td>
+              <td>Универсальные</td>
+              <td>Универсальные</td>
+              <td>Автоматы</td>
+              <td>Электрохимические</td>
+              <td>Электроискровые</td>
+              <td></td>
+              <td>Электроэрозионные, ультрозвуковые</td>
+              <td>Анодно-механические</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><b>Зубо- и резьбо обрабатывающие</b></td>
+              <td><b>5</b></td>
+              <td>Зубострогальные для цилиндрических колес</td>
+              <td>Зуборезные для конических колес</td>
+              <td>Зубофрезерные для цилиндрических колес и шлицевых валов</td>
+              <td>Зубофрезерные для червячных колес</td>
+              <td>Для обработки торцов зубьев колес</td>
+              <td>Резьбо-фрезер-ные</td>
+              <td>Зубоотделочные</td>
+              <td>Зубо- и резьбошлифовальные</td>
+              <td>Разные зубо- и резьбообрабатывающие</td>
+            </tr>
+            <tr>
+              <td><b>Фрезерные</b></td>
+              <td><b>6</b></td>
+              <td>Вертикально-фрезерные консольные</td>
+              <td>Фрезерные непрерывного действия</td>
+              <td></td>
+              <td>Копировальные и гравировальные</td>
+              <td>Вертикальные бесконсольные</td>
+              <td>Продольные</td>
+              <td>Широкоуниверсальные</td>
+              <td>Горизонтальные консольные</td>
+              <td>Разные фрезерные</td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+              <td rowspan="2"><b>Строгальные, долбёжные, протяжные</b></td>
+              <td rowspan="2"><b>7</b></td>
+              <td colspan="2">Продольные</td>
+              <td rowspan="2">Поперечно-строгальные</td>
+              <td rowspan="2">Долбежные</td>
+              <td rowspan="2">Протяжные горизонтальные</td>
+              <td rowspan="2"></td>
+              <td rowspan="2">Протяжные вертикальные</td>
+              <td rowspan="2"></td>
+              <td rowspan="2">Разные строгальные</td>
+            </tr>
+            <tr>
+              <td>одношпиндельные</td>
+              <td>многошпиндельные</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><b>Разрезные</b></td>
+              <td rowspan="2"><b>8</b></td>
+              <td colspan="3">Отрезные</td>
+              <td rowspan="2">Правильно-отрезные</td>
+              <td colspan="3">Пилы</td>
+              <td rowspan="2"></td>
+              <td rowspan="2"></td>
+            </tr>
+            <tr>
+              <td>токарные резцом</td>
+              <td>абразивным кругом</td>
+              <td>диском</td>
+              <td>Ленточные</td>
+              <td>Дисковые</td>
+              <td>Ножовочные</td>
+            </tr>
+            <tr>
+              <td><b>Разные</b></td>
+              <td><b>9</b></td>
+              <td>Муфто- и трубообрабатывающие</td>
+              <td>Пилонасекательные</td>
+              <td>Правильно- и бесцентрово-обдирочные</td>
+              <td></td>
+              <td>Для испытания инструмента</td>
+              <td>Делительные машины</td>
+              <td>Балансировочные</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="turning-equipment">
+      <div class="wrapper">
+        <h2 class="wrapper__subtitle">Классификация токарного оборудования</h2>
+        <p class="wrapper__text">
+          Классификация токарных станков, которая была разработана еще в советское время, причисляет такие агрегаты к
+          первой категории оборудования, предназначенного для обработки заготовок из металла. Согласно данной
+          классификации,
+          все виды токарных станков причисляются к одной из следующих категорий:
+        </p>
+        <ul class="wrapper__list">
+          <li>автоматические и полуавтоматические токарные агрегаты с одним шпинделем</li>
+          <li>многошпиндельные станки:</li>
+          <ul class="wrapper__list">
+            <li>автомат</li>
+            <li>полуавтомат</li>
+          </ul>
+          <li>револьверные модели</li>
+          <li>станки отрезной группы</li>
+          <li>карусельные модели</li>
+          <li>лобовое и винторезное оборудование</li>
+          <li>многорезцовые и полировальные агрегаты</li>
+          <li>специализированные станки, которые могут быть обычными и автоматическими</li>
+          <li>устройства специального назначения</li>
+        </ul>
+        <p>
+          По степени точности обработки производятся следующие типы токарных станков:
+          <ul class="wrapper__list">
+            <li>С — особой точности</li>
+            <li>В — высокой точности</li>
+            <li>Н — нормальной точности</li>
+            <li>А — особо высокой точности</li>
+            <li>П — повышенной точности</li>
+          </ul>
+        </p>
+        <p class="wrapper__text">
+          От того, к какой категории принадлежит токарный станок, зависят его функциональные возможности, и,
+          соответственно,
+          сфера применения. Узнать об основных технических возможностях станка можно и по его маркировке, которая
+          включает
+          в себя следующее:
+          <ul class="wrapper__list">
+            <li>начальную цифру «1», свидетельствующую, что это именно токарный станок, а не какой-либо другой;</li>
+            <li>вторую цифру, указывающую на тип, к которому относится токарный агрегат;</li>
+            <li>третью цифру (а в некоторых моделях и четвертую) — это самый основной параметр станка, который
+              характеризует высоту его центров.
+            </li>
+          </ul>
+        </p>
+        <img src="images/Picture40.png" class="popup" alt="Machine">
+        <p class="wrapper__text">
+          Присутствуют в маркировке таких агрегатов и буквенные обозначения, которые определяют его конструктивные
+          особенности: уровень его автоматизации, точности, модификацию, оснащенность системой ЧПУ. К примеру,
+          маркировка
+          модели токарного станка 1И611П расшифровывается следующим образом: буква «И» говорит о том, что это
+          устройство
+          модернизировано буква «П» — станок повышенной точности; высота центров у данной модели соответствует
+          значению
+          110 мм.
+        </p>
+      </div>
+    </section>
+    <section class="single-mashines">
+      <div class="wrapper">
+        <h2 class="wrapper__subtitle">Одношпиндельные станки</h2>
+        <div class="wrapper__row-content">
+          <p class="wrapper__text">
+            Токарные автоматы и полуавтоматы применяют для обработки деталей сложной конфигурации с помощью большого
+            количества инструментов.
+          </p>
+          <img class="wrapper__circle-image" src="images/Picture41.png" alt="Machine">
+        </div>
+      </div>
+    </section>
+    <section class="multi-mashines">
+      <div class="wrapper">
+        <h2 class="wrapper__subtitle">Многошпиндельные станки</h2>
+        <p class="wrapper__text">Отличительной особенностью многошпиндельных автоматов и полуавтоматов является наличие
+          нескольких одновременно работающих шпинделей.</p>
+        <p class="wrapper__text">Горизонтальные многошпиндельные полуавтоматы предназначены для изготовления деталей из
+          прутковых и штучных
+          заготовок.</p>
+        <div class="wrapper__row-content">
+          <img class="wrapper__default-image" src="images/Picture42.png" alt="Machine">
+          <img class="wrapper__default-image" src="images/Picture43.png" alt="Machine">
+        </div>
+        <p><strong>Одношпиндельные</strong> делятся на автоматы продольного точения, фасонно-отрезные и
+          токарно-револьверные.</p>
+        <div class="wrapper__row-content">
+          <img class="wrapper__default-image" src="images/Picture44.png" alt="Machine">
+          <img class="wrapper__default-image" src="images/Picture45.png" alt="Machine">
+          <img class="wrapper__default-image" src="images/Picture46.png" alt="Machine">
+        </div>
+        <p><strong>Многошпиндельные</strong> делятся на многорезцовые, копировальные и многорезцовые</p>
+        <div class="wrapper__row-content">
+          <img class="wrapper__default-image" src="images/Picture47.png" alt="Machine">
+          <img class="wrapper__default-image" src="images/Picture48.png" alt="Machine">
+          <img class="wrapper__default-image" src="images/Picture49.png" alt="Machine">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper">
+        <h2 class="wrapper__subtitle">Токарно-револьверные</h2>
+        <p>Имеют в наличии револьверную головку</p>
+        <img src="images/Picture50.png" alt="Machine">
+        <div class="wrapper__grid-content">
+          <p>Виды револьверных головок</p>
+          <img class="wrapper__default-image" src="images/Picture51.png" alt="Machine">
+          <img class="wrapper__default-image" src="images/Picture52.png" alt="Machine">
+          <img class="wrapper__default-image" src="images/Picture53.png" alt="Machine">
+        </div>
+      </div>
+    </section>
+    <section class="turning-drilling-mashines">
+      <div class="wrapper">
+        <h2 class="wrapper__subtitle">Токарные сверлильно-отрезные станки</h2>
+        <p>Применяются для разрезки по длине круглых прутков, валов и труб. резцами.</p>
+        <div class="wrapper__image-container">
+          <img src="images/Picture54.png" alt="Machine">
+        </div>
+      </div>
+    </section>
+    <section class="turning-boring-mashines">
+      <div class="wrapper">
+        <h2 class="wrapper__subtitle">Токарно-карусельные станки</h2>
+        <div class="wrapper__row-content">
+          <div class="wrapper__content-item">
+            <img class="wrapper__default-image" src="images/Picture55.png" alt="Machine">
+            <p><b>одностоечный</b></p>
+          </div>
+          <div class="wrapper__content-item">
+            <img class="wrapper__default-image" src="images/Picture56.png" alt="Machine">
+            <p><b>двухстоечный</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="turning-lobby-mashines">
+      <div class="wrapper">
+        <h2 class="wrapper__subtitle">Токарно-лобовые</h2>
+        <div class="wrapper__row-content">
+          <div class="wrapper__content-item">
+            <p>Обеспечивают обработку больших массивных заготовок.</p>
+            <img src="images/Picture57.png" alt="Machine">
+          </div>
+          <div class="wrapper__content-item">
+            <p>
+              Применяют для обработки деталей типа валов, дисков, втулок и обеспечивают обтачивание, растачивание
+              резцами,
+              обработку торцовых поверхностей, прорезку канавок и отрезку, фасонное точение, сверление, зенкерование и
+              развертывание
+              отверстий, нарезание наружной и внутренней резьб резцами, метчиками и плашками
+            </p>
+            <img src="images/Picture58.png" alt="Machine">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="multi-cutter-mashines">
+      <div class="wrapper">
+        <h2 class="wrapper__subtitle">Многорезцовые</h2>
+        <p>Обработку ведут несколькими резцами одновременно</p>
+        <div class="wrapper__row-content">
+          <img src="images/Picture59.png" alt="Machine">
+          <img src="images/Picture60.png" alt="Machine">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

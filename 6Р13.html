@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 11px;
+        }
+
+        :root {
+            --primary-color: #5b5b5b;
+            --secondary-color: #ef6868;
+        }
+
+        body {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            display: flex;
+            width: 100%;
+        }
+        img, table {
+            margin: 3rem auto!important;
+        }
+        main {
+            margin: 0 auto;
+            max-width: 128rem;
+            padding: 0 4rem;
+        }
+        .formula{
+            display: flex;
+            justify-content: center;
+            margin-top: -2%;
+        }
+        .formula img{
+            transition: transform 0.5s;
+        }
+        .formula img:hover {
+            transform: scale(1.2);
+        }
+        .wrapper__title {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 4.5rem;
+            max-width: 40rem;
+            margin: 20px auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .wrapper__title-light {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            font-size: 6.5rem;
+        }
+
+        .wrapper__list li {
+            transition: color .3s;
+        }
+
+        .wrapper__list li:hover {
+            color: var(--secondary-color);
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .wrapper__row-content img {
+            display: flex;
+            margin: 3.5rem auto;
+            width: 40rem;
+            height: 30rem;
+            border-radius: 2rem;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+        .wrapper__row-content .wrapper__default-image {
+            width: 30rem;
+            height: 25rem;
+        }
+
+        .wrapper__row-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .wrapper__row-content img:hover {
+            transform: scale(1.2);
+        }
+        td,tr,table,th{
+            border-collapse: collapse;
+            border: 1px solid #7f7f7f;
+            padding: 10px 0;
+        }
+        table{
+            margin: 20px auto;
+            width: 70%;
+            vertical-align: center;
+        }
+        td:nth-child(2n){
+            text-align: center;
+        }
+        td:nth-child(odd){
+            padding-left: 2%;
+        }
+        table li{
+            list-style-type: "- ";
+        }
+        p{
+            text-align: justify;
+            margin: 1rem auto;
+        }
+        p:first-letter{
+            padding-left: 1em;
+        }
+        .list_td{
+            padding-top: 35px;
+        }
+        ul{
+            padding-top: 5px;
+            padding-left: 20px;
+        }
+        td span{
+            color: red;
+        }
+        .fraction, .top, .bottom {
+            padding: 0 5px;
+        }
+
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .bottom{
+            border-top: 1px solid #000;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <h1 class="wrapper__title">
+                <span class="wrapper__title-light">Станок 6Р13</span>
+            </h1>
+        </div>
+        <p>Станок модели <b>6Р13</b> предназначен для сверления, фрезерования и растачивания заготовок любой формы из различных материалов – стали, чугуна, цветных металлов, а также их сплавов.</p>
+        <table>
+            <tr>
+                <th>Техническая характеристика станка</th>
+                <th>Величина</th>
+            </tr>
+            <tr>
+                <td>Размеры рабочей поверхности стола, мм:
+                    <ul>
+                        <li>ширина</li>
+                        <li>длина</li>
+                    </ul>
+                </td>
+                <td class="list_td">400 <br> 1600</td>
+            </tr>
+            <tr>
+                <td>Наибольшие перемещения стола, мм:
+                    <ul>
+                        <li>продольное</li>
+                        <li>поперечное</li>
+                        <li>вертикальное</li>
+                    </ul>
+                </td>
+                <td class="list_td">
+                    1000 <br>
+                    320 <br>
+                    420</td>
+            </tr>
+            <tr>
+                <td>Наибольший угол поворота шпиндельной головки </td>
+                <td>±45<sup>0</sup></td>
+            </tr>
+            <tr>
+                <td>Число частот вращения шпинделя </td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><span>Частота вращения</span>, мин<sup>-1</sup> </td>
+                <td>31,5 - 1600 </td>
+            </tr>
+            <tr>
+                <td>Число подач стола</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td><span>Подача</span>, мм/мин:
+                    <ul>
+                        <li>продольная</li>
+                        <li>продольная</li>
+                        <li>вертикальная</li>
+                    </ul>
+                </td>
+                <td class="list_td">
+                    12,5 - 1250 <br>
+                    12,5 - 1250 <br>
+                    8,3 - 416
+                </td>
+            </tr>
+            <tr>
+                <td>Мощность привода главного движения, кВт</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Мощность привода подачи, кВт    </td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Габаритные размеры (длина×ширина×высота), мм </td>
+                <td>2560×2260×2120</td>
+            </tr>
+        </table>
+        <p>Консольно- фрезерный станок с вертикально расположенным шпинделем имеет крестово перемещающийся в горизонтальной плоскости стол, который смонтирован на вертикально перемещающейся по направляющим стойки консоли. Станок 6Р13 предназначен для обработки всевозможных деталей из стали, чугуна, труднообрабатываемых и цветных металлов, главным образом торцовыми и концевыми фрезами. Может использоваться в промышленности для фрезерования, сверления и расточных работ в условиях индивидуального и серийного производства. </p>
+        <div class="wrapper__row-content">
+            <img class="wrapper__default-image" src="img/6Р13/1.png" alt="Machine">
+            <img class="wrapper__default-image" src="img/6Р13/2.png" alt="Machine">
+            <img class="wrapper__default-image" src="img/6Р13/3.png" alt="Machine">
+        </div>
+        <p>На фундаментной плите (поз. 1) установлена станина (поз. 2), по вертикальным направляющим которой перемещается консоль (поз. 7) (вертикальная подача). По горизонтальным направляющим консоли перемещаются поперечные салазки (поз. 6) а по направляющим салазок перемещается стол (поз. 5) (продольная и поперечная подачи). На станине смонтирована поворотная головка (поз. 3), имеющая поворот вокруг оси на угол ±45°, что позволяет вести обработку наклонных плоскостей. Коробка скоростей размещена в станине и сообщает шпинделю (поз. 4) главное вращательное движение. Шпиндель смонтирован в поворотной фрезерной головке.  Коробка подач, обеспечивающая изменение скорости перемещения стола, размещается в консоли.   </p>
+        <div class="wrapper__row-content">
+            <img class="wrapper__default-image" src="img/6Р13/4.png" alt="Machine">
+            <img class="wrapper__default-image" src="img/6Р13/5.png" alt="Machine">
+        </div>
+        <p>Движения в станке (рисунок). Главное движение – вращение шпинделя фрезы осуществляется от электродвигателя М1 (N = 7,5 кВт; n = 1460 мин-1), который через коробку скоростей сообщает шпинделю 18 различных частот вращения. Уравнение кинематической цепи главного движения вращения шпинделя имеет вид: </p>
+        <div class="formula">
+            <img src="img/6Р13/6.png" alt="formula">
+        </div>
+        <p>Изменение направления вращения шпинделя осуществляется реверсированием электродвигателя.  </p>
+        <p>Движение подачи производится от электродвигателя М2 (<b>N = 1,7</b> кВт; <b>n = 1420</b> мин<sup>-1</sup>). Коробка подач станка позволяет осуществлять механическое перемещение стола в трех направлениях: продольном (перпендикулярно оси шпинделя), поперечном (параллельно оси шпинделя) и вертикальном. Специальные блокировочные устройства обеспечивают невозможность одновременного включения нескольких движений.  </p>
+        <p>Восемнадцать продольных подач осуществляются по схеме: электродвигатель <b>М2</b>, постоянные передачи <span class="fraction">26/50</span> и <span class="fraction">26/57</span>, тройной передвижной блок (<span class="fraction">18/36</span>;<span class="fraction">27/27</span>;<span class="fraction">36/18</span> ), второй тройной блок (<span class="fraction">18/40</span>;<span class="fraction">21/37</span>;<span class="fraction">44/34</span> ), вал Х. С вала Х движение может передаваться либо на вал ХI, либо непосредственно через колеса<span class="fraction">40/40</span>
+            (муфта М2 включена), либо через перебор <span class="fraction">13/45</span>•<span class="fraction">18/40</span>•<span class="fraction">40/40</span> (муфта М2 выключена). Далее движение передается по схеме: вал <b> XI</b>, передача <span class="fraction">28/35</span>, вал <b>XII</b>, передачи <span class="fraction">18/33</span>,<span class="fraction">33/27</span>,<span class="fraction">18/16</span>,<span class="fraction">18/18</span>, ходовой винт с шагом 6 мм.</p>
+        <p>Поперечные и вертикальные перемещения стола осуществляются аналогичным путем двумя другими ходовыми винтами.</p>
+        <p>Уравнение кинематической цепи для продольной подачи будет иметь вид: </p>
+        <div class="formula">
+            <img src="img/6Р13/7.jpg" alt="formula">
+        </div>
+        <p>Уравнение кинематической цепи для вертикальной подачи будет иметь вид: </p>
+        <div class="formula">
+            <img src="img/6Р13/8.jpg" alt="formula">
+        </div>
+        Уравнение кинематической цепи для поперечной подачи будет иметь вид:
+        <div class="formula">
+            <img src="img/6Р13/9.jpg" alt="formula">
+        </div>
+        <p>Быстрое перемещение стола во всех трех направлениях осуществляется от того же электродвигателя без коробки подач, непосредственно через зубчатую передачу <span class="fraction">26/50</span>,<span class="fraction">50/67</span>,<span class="fraction">67/33</span>, фрикционную муфту М<sub>4</sub> на валу XI и далее по кинематическим цепям рабочих подач. Кулачковая муфта М<sub>3</sub> в этом случае выключена, а фрикционная муфта М<sub>4</sub> включена.  </p>
+        <p>На рисунке показаны муфты последнего вала <b>XI</b> коробки подач станка. Слева на валу находится шариковая предохранительная муфта <b>1</b> с зубчатым венцом <b>(z = 40)</b>. Рабочая подача осуществляется при включении кулачковой муфты М<sub>7</sub> в крайнее левое положение, когда ее кулачки сцепляются с кулачками предохранительной шариковой муфты. В этом случае движение от зубчатого колеса <b> 8 (z = 40)</b> передается на зубчатый венец предохранительной муфты и далее на кулачковую муфту М<sub>7</sub>, которая установлена на валу <b>XI</b> на скользящей шпонке.</p>
+    </main>
+    <script>
+        $('.fraction').each(function(key, value) {
+            $this = $(this)
+            var split = $this.html().split("/")
+            if( split.length == 2 ){
+                $this.html('<span class="top">'+split[0]+'</span><span class="bottom">'+split[1]+'</span>')
+            }
+        });
+
+    </script>
+</body>
+</html>
