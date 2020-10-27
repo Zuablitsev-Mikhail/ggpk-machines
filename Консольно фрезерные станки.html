@@ -1,10 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&diлsplay=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Site</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 11px;
+        }
+
+        :root {
+            --primary-color: #5b5b5b;
+            --secondary-color: #ef6868;
+        }
+
+        body {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            display: flex;
+            width: 100%;
+        }
+        img, table {
+            margin: 3rem auto!important;
+        }
+        main {
+            margin: 0 auto;
+            max-width: 128rem;
+            padding: 0 4rem;
+        }
+        .formula{
+            display: flex;
+            justify-content: center;
+            margin-top: -2%;
+        }
+        .formula img{
+            transition: transform 0.5s;
+        }
+        .formula img:hover {
+            transform: scale(1.2);
+        }
+        .wrapper__title {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 4.5rem;
+            margin: 20px auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .wrapper__title-light {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            font-size: 6.5rem;
+        }
+
+        .wrapper__list li {
+            transition: color .3s;
+        }
+
+        .wrapper__list li:hover {
+            color: var(--secondary-color);
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .wrapper__row-content img {
+            display: flex;
+            margin: 3.5rem auto;
+            width: 40rem;
+            height: 30rem;
+            border-radius: 2rem;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+        .wrapper__row-content .wrapper__default-image {
+            width: 30rem;
+            height: 25rem;
+        }
+
+        .wrapper__row-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .wrapper__row-content img:hover {
+            transform: scale(1.2);
+        }
+        td,tr,table,th{
+            border-collapse: collapse;
+            border: 1px solid #7f7f7f;
+            padding: 10px 0;
+        }
+        table{
+            margin: 20px auto;
+            width: 70%;
+            vertical-align: center;
+        }
+        td:nth-child(2n){
+            text-align: center;
+        }
+        td:nth-child(odd){
+            padding-left: 2%;
+        }
+        table li{
+            list-style-type: "- ";
+        }
+        p{
+            text-align: justify;
+            margin: 1rem auto;
+            line-height: 1.5em;
+        }
+        p:first-letter{
+            padding-left: 2em;
+        }
+        .list_td{
+            padding-top: 35px;
+        }
+        ul{
+            padding-top: 5px;
+            padding-left: 20px;
+        }
+        td span {
+            color: red;
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .flex .text{
+            width: 80%;
+            display: flex;
+            align-items: center;
+        }
+        .flex .img{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+        }
+        .img img{
+            height: 150px;
+            width: auto;
+        }
+        .inner_img{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <main>
+        <div class="wrapper">
+            <h1 class="wrapper__title">
+                <span class="wrapper__title-light">Консольно-фрезерные станки</span>
+            </h1>
+        </div>
+        <p>На фрезерных станках можно обрабатывать наружные и внутренние поверхности различной конфигурации, прорезать прямые и винтовые канавки, нарезать наружные и внутренние резьбы, обрабатывать зубчатые колеса и т.д. </p>
+        <div class="inner_img">
+            <img src="img/Консольно-фрезерные_станки/1.png" alt=""><br>
+            Рисунок - Схемы обработки на фрезерных станках
+        </div>
 
+        <p>Различают станки: консольно-фрезерные (горизонтальные, вертикальные, универсальные и широкоуниверсальные), вертикально-фрезерные, бесконсольные, продольно-фрезерные (одно- и двухстоечные), фрезерные непрерывного действия (карусельные и барабанные), копировально-фрезерные (для контурного и объемного фрезерования), гравировально-фрезерные, специализированные (резьбофрезерные, шпоночно-фрезерные, шлицефрезерные и др.). </p>
+        <p>В современных фрезерных станках применяют разделенные принципы главного движения и подач, механизмы ускоренных перемещений стола (во всех направления), однорукояточное управление изменения скоростей подач. В станках узлы и детали широко унифицированы. </p>
+        <p>Станки называют консольными потому, что стол станка установлен на консоли, перемещающейся вверх по направляющим станины. К консольно-фрезерным станкам относят горизонтально-фрезерные, вертикально-фрезерные, универсальные и широкоуниверсальные станки. Основным размером фрезерных станков общего назначения является размер рабочей поверхности стола. У горизонтальных консольно-фрезерных станков ось шпинделя расположена горизонтально, и стол передвигается в трех взаимно перпендикулярных направлениях.</p>
+        <div class="flex">
+            <div class="text">
+                <p>Универсальные консольно-фрезерные станки внешне почти не отличаются от горизонтальных станков, но имеют поворотный стол, который помимо возможности перемещения в трех взаимно перпендикулярных направлениях может быть повернут вокруг своей вертикальной оси на ±450. Это позволяет обрабатывать на станке винтовые канавки и нарезать косозубые колеса. </p>
+            </div>
+            <div class="img"><img src="img/Консольно-фрезерные_станки/2.png" alt=""></div>
+
+            <div class="img"><img src="img/Консольно-фрезерные_станки/3.png" alt=""></div>
+            <div class="text">
+                <p>Вертикальные консольно-фрезерные станки по внешнему виду отличаются от горизонтальных вертикальным расположением оси шпинделя и отсутствием хобота. Хобот у горизонтальных станков служит для закрепления кронштейна, поддерживающего конец фрезерной оправки.</p>
+            </div>
+            <div class="text">
+                <p>Широкоуниверсальные консольно-фрезерные станки в отличие от универсальных имеют дополнительный шпиндель, поворачивающийся вокруг вертикальной и горизонтальной осей. Имеются также широкоуниверсальные станки с двумя шпинделями (горизонтальным и вертикальным) и столом, поворачивающимся вокруг горизонтальной оси. В широкоуниверсальных фрезерных станках шпиндель может быть установлен под любым углом к обрабатываемой заготовке. </p>
+            </div>
+            <div class="img"><img src="img/Консольно-фрезерные_станки/4.png" alt=""></div>
+        </div>
+        <p>Горизонтально-, вертикально- и универсально-фрезерные станки являются основными модификациями консольно-фрезерных станков и представляют собой станки общего назначения. </p>
+    </main>
 </body>
 </html>

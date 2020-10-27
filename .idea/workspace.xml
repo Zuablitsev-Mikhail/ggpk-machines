@@ -27,13 +27,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b98d3f9-ac5f-4b5f-9b94-11866d16a4f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/machines.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/machines.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6Р13Ф3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6Р13Ф3/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6Р13Ф3/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6Р13Ф3/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6Р13Ф3/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6Р13Ф3/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6Р13Ф3/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Вертикально_фрезерные_бесконсольные/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Вертикально_фрезерные_бесконсольные/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Консольно-фрезерные_станки/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Консольно-фрезерные_станки/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Консольно-фрезерные_станки/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Консольно-фрезерные_станки/4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/6Р13.html" beforeDir="false" afterPath="$PROJECT_DIR$/6Р13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6Р13Ф.html" beforeDir="false" afterPath="$PROJECT_DIR$/6Р13Ф.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6Р13Ф.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6Р82.html" beforeDir="false" afterPath="$PROJECT_DIR$/6Р82.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokar.html" beforeDir="false" afterPath="$PROJECT_DIR$/tokar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Вертикально фрезерные бесконсольные станки.html" beforeDir="false" afterPath="$PROJECT_DIR$/Вертикально фрезерные бесконсольные станки.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Консольно фрезерные станки.html" beforeDir="false" afterPath="$PROJECT_DIR$/Консольно фрезерные станки.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/делительные головки.html" beforeDir="false" afterPath="$PROJECT_DIR$/делительные головки.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,8 +123,24 @@
       <workItem from="1602918347938" duration="622000" />
       <workItem from="1602940638588" duration="19000" />
       <workItem from="1603113348357" duration="1838000" />
-      <workItem from="1603115309240" duration="249000" />
+      <workItem from="1603115309240" duration="1590000" />
+      <workItem from="1603116914971" duration="426000" />
+      <workItem from="1603117357036" duration="73000" />
+      <workItem from="1603117486949" duration="600000" />
+      <workItem from="1603172057517" duration="23000" />
+      <workItem from="1603174127618" duration="9000" />
+      <workItem from="1603344659299" duration="4182000" />
+      <workItem from="1603447231828" duration="39000" />
+      <workItem from="1603776933815" duration="3201000" />
     </task>
+    <task id="LOCAL-00001" summary="начало создания 6Р13Ф">
+      <created>1603115568291</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603115568291</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,10 +214,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="375" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602915561995" />
-    <state x="456" y="77" width="912" height="902" key="CommitChangelistDialog2" timestamp="1603114294442">
+    <state x="456" y="77" width="912" height="902" key="CommitChangelistDialog2" timestamp="1603115568190">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="456" y="77" width="912" height="902" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1603114294442" />
+    <state x="456" y="77" width="912" height="902" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1603115568190" />
     <state x="100" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1603114330279">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -204,17 +234,21 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="175" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1603115386636" />
-    <state x="512" y="265" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1603115548875">
+    <state x="512" y="265" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1603115585661">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="512" y="265" width="800" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1603115548875" />
+    <state x="512" y="265" width="800" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1603115585661" />
     <state x="698" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602915526712">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602915526712" />
-    <state x="624" y="247" key="run.anything.popup" timestamp="1602915530422">
+    <state x="624" y="247" key="run.anything.popup" timestamp="1603353766539">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="624" y="247" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602915530422" />
+    <state x="624" y="247" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603353766539" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603780089840">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603780089840" />
   </component>
 </project>

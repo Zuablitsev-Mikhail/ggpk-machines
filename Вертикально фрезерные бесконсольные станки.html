@@ -1,10 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&diлsplay=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Site</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 11px;
+        }
+
+        :root {
+            --primary-color: #5b5b5b;
+            --secondary-color: #ef6868;
+        }
+
+        body {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            display: flex;
+            width: 100%;
+        }
+        img, table {
+            margin: 3rem auto!important;
+        }
+        main {
+            margin: 0 auto;
+            max-width: 128rem;
+            padding: 0 4rem;
+        }
+        .formula{
+            display: flex;
+            justify-content: center;
+            margin-top: -2%;
+        }
+        .formula img{
+            transition: transform 0.5s;
+        }
+        .formula img:hover {
+            transform: scale(1.2);
+        }
+        .wrapper__title {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 4.5rem;
+            margin: 20px auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .wrapper__title-light {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 300;
+            font-size: 6.5rem;
+        }
+
+        .wrapper__list li {
+            transition: color .3s;
+        }
+
+        .wrapper__list li:hover {
+            color: var(--secondary-color);
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .wrapper__row-content img {
+            display: flex;
+            margin: 3.5rem auto;
+            width: 40rem;
+            height: 30rem;
+            border-radius: 2rem;
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+        .wrapper__row-content .wrapper__default-image {
+            width: 30rem;
+            height: 25rem;
+        }
+
+        .wrapper__row-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .wrapper__row-content img:hover {
+            transform: scale(1.2);
+        }
+        td,tr,table,th{
+            border-collapse: collapse;
+            border: 1px solid #7f7f7f;
+            padding: 10px 0;
+        }
+        table{
+            margin: 20px auto;
+            width: 70%;
+            vertical-align: center;
+        }
+        td:nth-child(2n){
+            text-align: center;
+        }
+        td:nth-child(odd){
+            padding-left: 2%;
+        }
+        table li{
+            list-style-type: "- ";
+        }
+        p{
+            text-align: justify;
+            margin: 1rem auto;
+            line-height: 1.5em;
+        }
+        p:first-letter{
+            padding-left: 2em;
+        }
+        .list_td{
+            padding-top: 35px;
+        }
+        ul{
+            padding-top: 5px;
+            padding-left: 20px;
+        }
+        td span{
+            color: red;
+        }
+        td:nth-child(2n){
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-
+    <main>
+        <div class="wrapper">
+            <h1 class="wrapper__title">
+                <span class="wrapper__title-light">Вертикально-фрезерные бесконсольные станки</span>
+            </h1>
+        </div>
+        <p>Бесконсольные вертикально-фрезерные станки (вертикально-фрезерные станки с крестовым столом) применяют для фрезерования крупных деталей с большой толщиной срезаемого слоя. Бесконсольные станки имеют большую мощность, высокие частоты вращения шпинделя и подачи стола. Шпиндельная бабка с расположенной в ней коробкой скоростей перемещается в вертикальном направлении по направляющим станины. Вращение шпинделя осуществляется от отдельного электродвигателя. У некоторых станков можно устанавливать ось шпинделя под углом. Стол имеет движения по двум взаимно перпендикулярным направлениям в горизонтальной плоскости. </p>
+        <p>Вертикально-фрезерные бесконсольные станки выпускают в основном со столом шириной 630, 800 и 1000 мм. Станком управляют обычно с подвесного пульта. На базе основных исполнений станков изготовляют различные модификации (с поворотной шпиндельной бабкой, со встроенным круглым столом, копировальные и др.).</p>
+        <p>Вертикально-фрезерный бесконсольный станок 6А59 показан на рис.</p>
+        <table>
+            <tr>
+                <th>Техническая характеристика станка</th>
+                <th>Величина</th>
+            </tr>
+            <tr>
+                <td>Размеры рабочей поверхности стола, мм:
+                    <ul>
+                        <li>ширина</li>
+                        <li>длина</li>
+                    </ul>
+                </td>
+                <td class="list_td">1000 <br> 2500</td>
+            </tr>
+            <tr>
+                <td>Перемещение стола, мм:
+                    <ul>
+                        <li>продольное</li>
+                        <li>поперечное</li>
+                    </ul>
+                </td>
+                <td class="list_td">
+                    2000 <br>
+                    950</td>
+            </tr>
+            <tr>
+                <td>Расстояние от торца шпинделя до поверхности стола, мм</td>
+                <td><b>100-1000</b></td>
+            </tr>
+            <tr>
+                <td>Частота вращения шпинделя, мин<sup>-1</sup></td>
+                <td><b>25-1250</b></td>
+            </tr>
+            <tr>
+                <td>Подача (бесступенчатое регулирование), мм/мин</td>
+                <td><b>20 - 1500</b></td>
+            </tr>
+            <tr>
+                <td>Мощность электродвигателя главного движения, кВт</td>
+                <td><b>22</b></td>
+            </tr>
+            <tr>
+                <td>
+                    Габариты, мм
+                </td>
+                <td>
+                    6500X4550X4500
+                </td>
+            </tr>
+            <tr>
+                <td>Масса, т</td>
+                <td><b>23,6</b></td>
+            </tr>
+        </table>
+        <p>Станок применяют для фрезерных работ, используя различные виды быстрорежущего и твердосплавного инструмента, а также для простых расточных и сверлильных работ с вертикальной подачей <b>фрезерной бабки</b>. Для обработки деталей из черных и цветных металлов в условиях мелкосерийного и единичного производства</p>
+        <div class="wrapper__row-content">
+            <img class="wrapper__default-image" src="img/Вертикально_фрезерные_бесконсольные/1.png" alt="Machine">
+            <img class="wrapper__default-image" src="img/Вертикально_фрезерные_бесконсольные/2.png" alt="Machine">
+        </div>
+    </main>
 </body>
 </html>
